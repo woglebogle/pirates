@@ -1069,52 +1069,6 @@ __p+='`), v
         ft();
         lt.exports = window.Webflow = ie
     });
-    var vt = ve((ln, ht) => {
-        var dt = Le();
-        dt.define("brand", ht.exports = function(t) {
-            var f = {},
-                l = document,
-                T = t("html"),
-                B = t("body"),
-                _ = ".w-webflow-badge",
-                D = window.location,
-                C = /PhantomJS/i.test(navigator.userAgent),
-                P = "fullscreenchange webkitfullscreenchange mozfullscreenchange msfullscreenchange",
-                G;
-            f.ready = function() {
-                var k = T.attr("data-wf-status"),
-                    z = T.attr("data-wf-domain") || "";
-                /\.webflow\.io$/i.test(z) && D.hostname !== z && (k = !0), k && !C && (G = G || X(), Q(), setTimeout(Q, 500), t(l).off(P, te).on(P, te))
-            };
-
-            function te() {
-                var k = l.fullScreen || l.mozFullScreen || l.webkitIsFullScreen || l.msFullscreenElement || !!l.webkitFullscreenElement;
-                t(G).attr("style", k ? "display: none !important;" : "")
-            }
-
-            function X() {
-                var k = t('<a class="w-webflow-badge"></a>').attr("href", "https://webflow.com?utm_campaign=brandjs"),
-                    z = t("<img>").attr("src", "https://www.svgrepo.com/show/455858/skull-document.svg").attr("alt", "").css({
-                        marginRight: "8px",
-                        width: "16px"
-                    }),
-                    Y = t("<img>").attr("src", "https://d1otoma47x30pg.cloudfront.net/img/webflow-badge-text.6faa6a38cd.svg").attr("alt", "Made in Webflow");
-                return k.append(z, Y), k[0]
-            }
-
-            function Q() {
-                var k = B.children(_),
-                    z = k.length && k.get(0) === G,
-                    Y = dt.env("editor");
-                if (z) {
-                    Y && k.remove();
-                    return
-                }
-                k.length && k.remove(), Y || B.append(G)
-            }
-            return f
-        })
-    });
     var mt = ve((dn, pt) => {
         var Qe = Le();
         Qe.define("edit", pt.exports = function(t, f, l) {
@@ -1135,23 +1089,6 @@ __p+='`), v
 
             function X() {
                 P || /\?edit/.test(D.hash) && G()
-            }
-
-            function Q() {
-                P = !0, window.WebflowEditor = !0, B.off(C, X), F(function(M) {
-                    t.ajax({
-                        url: H("https://editor-api.webflow.com/api/editor/view"),
-                        data: {
-                            siteId: _.attr("data-wf-site")
-                        },
-                        xhrFields: {
-                            withCredentials: !0
-                        },
-                        dataType: "json",
-                        crossDomain: !0,
-                        success: k(M)
-                    })
-                })
             }
 
             function k(M) {
