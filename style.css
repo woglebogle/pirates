@@ -36,6 +36,7 @@
   --dl-space-space-oneandhalfunits: 24px;
 }
 .button {
+  subm: subm;
   color: var(--dl-color-gray-black);
   display: inline-block;
   padding: 0.5rem 1rem;

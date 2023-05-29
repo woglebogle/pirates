@@ -1,0 +1,54 @@
+.art-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.art-container1 {
+  width: 100%;
+  height: 1661px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: flex-start;
+  background-image: url("public/depositphotos_26090513-stock-photo-green-fire-on-black-background-1500w.webp");
+  background-position: center;
+}
+.art-container2 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.art-text {
+  color: var(--dl-color-colros-gr);
+  font-size: 100px;
+  font-family: Germanica;
+}
+.art-container3 {
+  width: 100%;
+  height: 689px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.art-link {
+  top: var(--dl-space-space-fourunits);
+  left: var(--dl-space-space-oneandhalfunits);
+  color: var(--dl-color-colros-gr);
+  position: absolute;
+  font-size: 40px;
+  transition: 0.3s;
+}
+.art-link:hover {
+  color: #ffffff;
+}
