@@ -8,16 +8,17 @@
   justify-content: flex-start;
   background-color: #000000;
 }
-.page-text {
+.page-navlink {
   top: 40px;
   left: 42px;
   color: var(--dl-color-colros-gr);
   position: absolute;
   font-size: 25px;
   font-family: Germanica;
+  text-decoration: none;
 }
 @media(max-width: 991px) {
-  .page-text {
+  .page-navlink {
     top: var(--dl-space-space-twounits);
     left: 316px;
     color: var(--dl-color-colros-gr);
@@ -27,7 +28,7 @@
   }
 }
 @media(max-width: 767px) {
-  .page-text {
+  .page-navlink {
     top: var(--dl-space-space-twounits);
     left: 204px;
     position: absolute;
@@ -35,7 +36,7 @@
   }
 }
 @media(max-width: 479px) {
-  .page-text {
+  .page-navlink {
     top: 70px;
     left: 63px;
     color: var(--dl-color-colros-gr);
