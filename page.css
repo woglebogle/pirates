@@ -22,10 +22,7 @@
   text-decoration: none;
 }
 .page-text {
-  top: 36px;
-  left: 33px;
   color: var(--dl-color-colros-gr);
-  position: absolute;
   font-size: 25px;
   font-family: Germanica;
 }
@@ -34,6 +31,12 @@
     color: var(--dl-color-colros-gr);
     font-size: 25px;
     font-family: Germanica;
+  }
+}
+@media(max-width: 767px) {
+  .page-text {
+    position: static;
+    align-self: center;
   }
 }
 @media(max-width: 479px) {
