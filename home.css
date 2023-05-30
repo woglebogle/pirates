@@ -113,10 +113,15 @@
   height: 152px;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 .home-div {
   width: 443px;
+}
+.home-text1 {
+  color: var(--dl-color-colros-gr);
+  font-size: 23px;
 }
 @media(max-width: 767px) {
   .home-navbar-interactive {

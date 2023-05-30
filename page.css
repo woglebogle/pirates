@@ -3,60 +3,6 @@
   display: flex;
   overflow: auto;
   min-height: 100vh;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #000000;
-}
-.page-text {
-  top: 40px;
-  left: 42px;
-  color: var(--dl-color-colros-gr);
-  position: absolute;
-  font-size: 25px;
-  font-family: Germanica;
-}
-.page-container1 {
-  flex: 0 0 auto;
-  width: 100%;
-  display: flex;
   align-items: center;
-  justify-content: center;
-}
-.page-image {
-  width: 737px;
-  height: 386px;
-  object-fit: cover;
-}
-@media(max-width: 991px) {
-  .page-text {
-    top: var(--dl-space-space-twounits);
-    left: 316px;
-    color: var(--dl-color-colros-gr);
-    position: absolute;
-    font-size: 25px;
-    font-family: Germanica;
-  }
-}
-@media(max-width: 767px) {
-  .page-text {
-    top: var(--dl-space-space-twounits);
-    left: 204px;
-    position: absolute;
-    align-self: center;
-  }
-}
-@media(max-width: 479px) {
-  .page-text {
-    top: 70px;
-    left: 63px;
-    color: var(--dl-color-colros-gr);
-    position: absolute;
-    font-size: 25px;
-    font-family: Germanica;
-  }
-  .page-image {
-    width: 451px;
-    height: 197px;
-  }
+  flex-direction: column;
 }
