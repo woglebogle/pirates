@@ -23,10 +23,14 @@
   align-items: center;
   justify-content: center;
 }
+.page1-navlink {
+  display: contents;
+}
 .page1-image {
   width: 737px;
   height: 386px;
   object-fit: cover;
+  text-decoration: none;
 }
 @media(max-width: 991px) {
   .page1-text {
